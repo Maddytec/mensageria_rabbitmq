@@ -11,7 +11,8 @@ import org.springframework.stereotype.Service;
 public class ConsumerServiceImpl implements ConsumerService {
 
     @Override
-    public void action(Message message) {
-      log.info("Message: " + message);
+    public void action(Message message) throws Exception {
+      throw new Exception("Error - Consumer message.");
+        //log.info("Message: " + message);
     }
 }
