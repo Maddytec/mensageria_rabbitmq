@@ -12,7 +12,6 @@ public class ConsumerServiceImpl implements ConsumerService {
 
     @Override
     public void action(Message message) throws Exception {
-      throw new Exception("Error - Consumer message.");
-        //log.info("Message: " + message);
+        log.info("Message: " + message);
     }
 }
